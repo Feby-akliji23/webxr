@@ -9,13 +9,32 @@ class Reticle extends THREE.Object3D {
     super();
 
     this.loader = new THREE.GLTFLoader();
-    this.loader.load("assets/reticle.gltf", (gltf) => {
+    this.loader.load("assets/AR DUNG KLURUK NEW.gltf", (gltf) => {
       this.add(gltf.scene);
     })
 
     this.visible = false;
   }
 }
+
+// class Reticle extends THREE.Object3D {
+//   constructor() {
+//     super();
+
+//     this.loader = new THREE.GLTFLoader();
+//     this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (gltf) => {
+//       this.add(gltf.scene);
+//     })
+
+//     this.visible = false;
+//   }
+// }
+
+// window.gltfLoader.load("assets/AR DUNG KLURUK MEDAN BARU (1).gltf", function(gltf) {
+//   const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+//   flower.castShadow = true;
+//   window.sunflower = gltf.scene;
+// });
 
 window.DemoUtils = {
   /**

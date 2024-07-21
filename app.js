@@ -1,5 +1,3 @@
-
-
 /**
  * Query for WebXR support. If there's no support for the `immersive-ar` mode,
  * show an error.
