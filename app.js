@@ -163,14 +163,6 @@ class App {
     this.reticle = new Reticle();
     this.scene.add(this.reticle);
 
-    // Load the GLTF model
-    const loader = new THREE.GLTFLoader();
-    loader.load('assets/reticle.gltf', (gltf) => {
-      this.scene.add(gltf.scene);
-    }, undefined, (error) => {
-      console.error('An error happened while loading the model', error);
-    });
-
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
     // to handle the matrices independently.

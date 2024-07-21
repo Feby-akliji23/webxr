@@ -9,21 +9,13 @@ class Reticle extends THREE.Object3D {
     super();
 
     this.loader = new THREE.GLTFLoader();
-    this.loader.load("assets/AR.gltf", (gltf) => {
+    this.loader.load("assets/reticle.gltf", (gltf) => {
       this.add(gltf.scene);
     })
 
     this.visible = false;
   }
 }
-
-
-// window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
-//   const flower = gltf.scene.children.find(c => c.name === 'sunflower')
-//   flower.castShadow = true;
-//   window.sunflower = gltf.scene;
-// });
-
 
 window.DemoUtils = {
   /**
